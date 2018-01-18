@@ -5,7 +5,7 @@
 # This ANN uses a data set of 20000 feature vectors, each with 17 features.
 # Each instance is a representation of hand-written letters, where feature 0 is the classification(letter)
 # 75 percent of the data set goes into a training set and the remaining 25 percent to a test set.
-# The ANN is set to train until it's prediction accuracy reaches 80 percent
+# The ANN is set to train until it's prediction accuracy reaches 98 percent
 
 import numpy as np
 import random
@@ -124,7 +124,6 @@ class ANN:
                 correct += 1
             self.counter += 1    
         self.accuracy = float(correct)/self.counter 
-        print(correct, self.counter)
         print("Test Accuracy: "+str(self.accuracy)+"\n")
         
         #if self.accuracy > .73 and self.learningRate == .01:
